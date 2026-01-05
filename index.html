@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSchedule | Умное управление кинотеатром</title>
+    <meta name="description" content="Профессиональная система управления кинотеатром нового поколения.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-flex">
+            <div class="logo">
+                <span></span> CineSchedule
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Возможности</a></li>
+                    <li><a href="#workflow">Рабочий процесс</a></li>
+                    <li><a href="#tech">Технологии</a></li>
+                </ul>
+            </nav>
+            <a href="https://github.com/suzcuaru/CineSchedule/releases" class="btn btn-primary" target="_blank">
+                <span>Скачать</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="feature-tag">СИСТЕМА v3.0.2</div>
+                <h1>Полный контроль <br><span class="gradient-text">вашего кинотеатра</span></h1>
+                <p>Профессиональная панель управления для киномехаников. Мониторинг расписания, контроль загрузки залов и отслеживание рекламных блоков в едином интерфейсе.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>54</h3>
+                        <p>Сеанса в день</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1820</h3>
+                        <p>Продано билетов</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Локальная работа</p>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 15px; justify-content: flex-start;">
+                    <a href="https://github.com/suzcuaru/CineSchedule" class="btn btn-primary" target="_blank">Начать работу</a>
+                    <a href="https://github.com/suzcuaru/CineSchedule" class="btn btn-outline" target="_blank">Документация</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal">
+                <div class="main-card">
+                    <!-- IMG: hero-main - Главная панель управления -->
+                    <img src="images/hero-main.png" alt="Главная панель CineSchedule">
+                    
+                    <!-- Floating Badges -->
+                    <div class="floating-badge badge-1">
+                        <div class="status-dot"></div>
+                        <div class="badge-text">
+                            <h4>Чебурашка 2</h4>
+                            <span>Идет сеанс • 898 билетов</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-badge badge-2">
+                        <div class="status-dot" style="background: #f59e0b; box-shadow: 0 0 10px #f59e0b;"></div>
+                        <div class="badge-text">
+                            <h4>Сервер</h4>
+                            <span>Syncing... 98%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Features -->
+    <section id="features" class="features">
+        <div class="container">
+            
+            <!-- Feature 1: Analytics -->
+            <div class="feature-block reveal">
+                <div class="feature-visual">
+                    <!-- IMG: analytics - Аналитика и контроль -->
+                    <img src="images/analytics.png" alt="Аналитика">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">АНАЛИТИКА И КОНТРОЛЬ</span>
+                    <h2>Данные, которые <br>имеют значение</h2>
+                    <p>Отслеживайте "Активность смены" и "Загрузку залов" в реальном времени. Интеллектуальная матрица состояния контента показывает, какие фильмы находятся в зале, качаются или требуют внимания.</p>
+                    <div class="tech-pill">Графики посещаемости</div>
+                    <div class="tech-pill">Статус DCP</div>
+                    <div class="tech-pill">Загрузка залов</div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Schedule & Ads -->
+            <div class="feature-block reverse reveal">
+                <div class="feature-visual">
+                    <!-- IMG: ads - Мониторинг рекламных блоков -->
+                    <img src="images/ads.png" alt="Рекламные блоки">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">МОНИТОРИНГ КОНТЕНТА</span>
+                    <h2>Точный мониторинг <br>рекламных блоков</h2>
+                    <p>Мониторинг рекламных блоков в реальном времени. Отслеживайте EMBEDED и COMMERCIAL паузы в расписании сеансов с точностью до секунды. Система отображает полную структуру рекламных блоков для каждого фильма.</p>
+                    <div class="tech-pill">Timeline Monitor</div>
+                    <div class="tech-pill">Ad Breakdown</div>
+                    <div class="tech-pill">Real-time Tracking</div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Reliability -->
+            <div class="feature-block reveal">
+                <div class="feature-visual">
+                    <!-- IMG: settings - Настройки и надежность -->
+                    <img src="images/settings.png" alt="Настройки">
+                </div>
+                <div class="feature-text">
+                    <span class="feature-tag">НАДЕЖНОСТЬ</span>
+                    <h2>Работает везде, <br>даже офлайн</h2>
+                    <p>Локальное хранилище IndexedDB гарантирует работу без интернета. Гибкая система настроек позволяет задать рабочее время, цвета статусов и параметры синхронизации.</p>
+                    <div class="tech-pill">IndexedDB</div>
+                    <div class="tech-pill">Offline Mode</div>
+                    <div class="tech-pill">AES-256 Security</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section id="workflow" class="gallery-section">
+        <div class="container">
+            <h2 style="margin-bottom: 40px; text-align: center;">Галерея интерфейсов</h2>
+            <div class="grid-gallery">
+                <!-- Large Main Item -->
+                <div class="gallery-item large reveal">
+                    <!-- IMG: schedule-grid - Сетка расписания по залам -->
+                    <img src="images/schedule-grid.png" alt="Сетка расписания">
+                    <div class="gallery-overlay">
+                        <h4>Сетка Сеансов</h4>
+                        <p>Визуальное расписание по залам с индикаторами готовности</p>
+                    </div>
+                </div>
+
+                <!-- Items -->
+                <div class="gallery-item reveal">
+                    <!-- IMG: releases - База фильмов и релизов -->
+                    <img src="images/releases.png" alt="Релизы">
+                    <div class="gallery-overlay">
+                        <h4>Релизы</h4>
+                        <p>База фильмов и постеров</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <!-- IMG: customization - Персонализация интерфейса -->
+                    <img src="images/customization.png" alt="Настройки статусов">
+                    <div class="gallery-overlay">
+                        <h4>Персонализация</h4>
+                        <p>Цветовая кодировка</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item wide reveal">
+                    <!-- IMG: system-core - Системная информация -->
+                    <img src="images/system-core.png" alt="Системная информация">
+                    <div class="gallery-overlay">
+                        <h4>System Core</h4>
+                        <p>Мониторинг версии и обновлений</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terminal / Tech Section -->
+    <section id="tech" class="terminal-section">
+        <div class="container">
+            <div class="terminal-window reveal">
+                <div class="terminal-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                    <span style="margin-left: 10px; font-size: 0.8rem; color: #666;">user@cineschedule:~</span>
+                </div>
+                <div class="terminal-body">
+                    <span class="command">> cineschedule --check-env</span>
+                    <span class="output">Initializing Core Environment...
+Version: v3.0.2 (BETA)
+Encryption: AES-256 Active
+Status: SYSTEM_OPTIMAL</span>
+
+                    <span class="command">> sync_core --status</span>
+                    <span class="output">Connected to localhost:8000
+Sync Mode: Mock (Demo)
+Data Kernel: Ready
+UI Layer: Rendered</span>
+
+                    <span class="command">> install --benefits</span>
+                    <span class="output">
+[✓] Professional Functionality
+[✓] Local Independence (Offline)
+[✓] Adaptive Design (Mobile/Tablet/Desktop)
+[✓] Advanced Analytics
+                    </span>
+                    <span class="command success">> SYSTEM READY TO DEPLOY</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-logo">
+                <span style="color:var(--accent-primary)">◆</span> CineSchedule
+            </a>
+            <p style="color: var(--text-muted); max-width: 500px; margin: 0 auto;">
+                Создано киномеханиками для киномехаников. Мы объединяем мощь современных технологий с простотой управления.
+            </p>
+            
+            <div class="social-links">
+                <a href="https://github.com/suzcuaru" target="_blank">GH</a>
+                <a href="https://t.me/+7t0HIRR20gBlOTZi" target="_blank">TG</a>
+            </div>
+
+            <p style="font-size: 0.8rem; opacity: 0.5;">&copy; 2026 CineSchedule System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
